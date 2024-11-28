@@ -7,6 +7,19 @@
 @import "bootstrap";
 @import "font-awesome";
 
-// Your CSS partials
-@import "components/index";
-@import "pages/index";
+// Composants
+@import 'components/navbar';
+@import 'components/banner';
+@import 'components/card_category';
+@import 'components/card_trip';
+@import 'components/form';
+// @import 'components/alert';
+// @import 'components/avatar';
+// @import 'components/form_legend_clear';
+
+// Pages spécifiques
+@import 'pages/home';
+@import 'pages/index';
+
+// Autres
+@import 'base';

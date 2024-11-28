@@ -1,0 +1,73 @@
+/* Style général pour les formulaires */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-control {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+}
+
+.simple_form .form-control {
+  width: 100%;
+}
+
+.simple_form .btn {
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+  &:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+  }
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  &:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+  }
+}
+
+.card {
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.card .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.card .btn {
+  width: 100%;
+  text-align: center;
+}
+
+h1.text-center {
+  margin-bottom: 1.5rem;
+}
