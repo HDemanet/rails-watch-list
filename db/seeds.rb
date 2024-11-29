@@ -12,6 +12,7 @@ require "open-uri"
 require "json"
 
 # nettoyer la db
+Bookmark.destroy_all
 Movie.destroy_all
 
 url = "https://tmdb.lewagon.com/movie/top_rated"

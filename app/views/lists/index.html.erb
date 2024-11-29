@@ -1,6 +1,6 @@
 
 <%# banner du Wagon %>
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://www.culturedeconfiture.fr/wp-content/uploads/2019/12/2046.jpg);">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('<%= cl_image_path("https://res.cloudinary.com/dycdymgsi/image/upload/v1732894754/e67hhnzbsxi5gr1vycmo.jpg") %>');">
   <div class="container">
     <h1>Ma Cinémathèque</h1>
     <p>Je crée, j'organise et je retrouve facilement mes films préférés</p>
@@ -19,7 +19,7 @@
   <div class="d-flex flex-wrap justify-content-center gap-3">
     <% @lists.each do |list| %>
       <%= link_to list_path(list), class: "card-wrapper text-decoration-none" do %>
-        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= list.photo.attached? ? url_for(list.photo) : "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg" %>')">
           <div class="card-body">
             <h2 class="card-title"><%= list.name %></h2>
           </div>

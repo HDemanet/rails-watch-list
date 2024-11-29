@@ -1,4 +1,4 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://www.shutterstock.com/image-illustration/warmovie-image-words-associated-topic-260nw-1081705652.jpg);">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= @list.photo.attached? ? url_for(@list.photo) : "https://res.cloudinary.com/dycdymgsi/image/upload/v1732896612/warmovie-image-words-associated-topic-260nw-1081705652_qst3my.jpg" %>');">
   <div class="container">
     <h1><%= @list.name %></h1>
   </div>
